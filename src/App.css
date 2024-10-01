@@ -1,38 +1,50 @@
+/* App.css */
+
+/* Custom styles */
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Use viewport units for responsive sizing */
+  pointer-events: none; /* Prevent interaction with the logo */
 }
 
+/* Animation for the logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Spin animation */
   }
 }
 
+/* Header styling */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* Dark background color */
+  min-height: 100vh; /* Minimum height to fill the viewport */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text color */
 }
 
+/* Link styling */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Light blue color for links */
 }
 
+/* Spin animation keyframes */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Starting rotation */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Ending rotation */
   }
 }
+
+/* Tailwind CSS directives */
+@tailwind base; /* Base styles (resets, default styles) */
+@tailwind components; /* Component styles (buttons, modals, etc.) */
+@tailwind utilities; /* Utility classes (margin, padding, etc.) */

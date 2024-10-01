@@ -1,13 +1,22 @@
+/* index.css */
+
+/* Reset default margin and set font styles */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; /* Improve text rendering on WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Improve text rendering on macOS */
 }
 
+/* Style for code elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Tailwind CSS imports */
+@tailwind base; /* Base styles (resets, default styles) */
+@tailwind components; /* Component styles (buttons, modals, etc.) */
+@tailwind utilities; /* Utility classes (margin, padding, etc.) */
