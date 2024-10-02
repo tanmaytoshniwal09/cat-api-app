@@ -74,7 +74,7 @@ export const FrontPage: React.FC = () => {
       </h1>
       {/* Centered Grid container for the images */}
       <div className="flex justify-center ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 mt-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-3">
           {isLoading ? (
             <p>Loading...</p>
           ) : isError ? (
